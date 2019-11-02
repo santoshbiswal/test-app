@@ -7,6 +7,6 @@ node {
         checkout scm
     }
     stage('Run ansible playbook to configure nginx') {
-        sh "ansible playbook nginx.yml"
+        sh "ansible-playbook nginx.yml"
     }
 }
